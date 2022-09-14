@@ -8,10 +8,11 @@ btn.addEventListener('click', function(event) {
 
 
     var novoPaciente = '<tr class="paciente">' +
-                        '<td class="info-nome" id="nome-4">' + campoNome.value + '</td>' +
-                        '<td class="info-peso" id="peso-4">' + campoPeso.value + '</td>' +
-                        '<td class="info-altura" id="altura-4">' + campoAltura.value + '</td>' +
-                        '<td class="info-imc" id="imc-4"></td>' +
+                        '<td class="info-nome" id="nome">' + campoNome.value + '</td>' +
+                        '<td class="info-peso" id="peso">' + campoPeso.value + '</td>' +
+                        '<td class="info-altura" id="altura">' + campoAltura.value + '</td>' +
+                        '<td class="info-imc" id="imc"></td>' +
+                        '<td class="info-situacao" id="situacao"></td>' +
                     '</tr>';
 
     var tabela = document.querySelector('table');

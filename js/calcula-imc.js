@@ -5,22 +5,16 @@ function calculandoTodosIMCs() {
         var imc = paciente.pegarImc();
     
         var tdImc = pacienteTr.getElementsByClassName('info-imc')[0];
-        tdImc.textContent = imc;
-    
-        console.log(imc); 
-    
+        tdImc.textContent = imc[0];       
+
+        var tdSituacao = pacienteTr.getElementsByClassName('info-situacao')[0];
+        tdSituacao.textContent = imc[1];       
+
     });    
 }
 
 var botao = document.getElementById('calcula-imcs');
-/*botao.onclick = calculandoTodosIMCs;
-botao.onclick = function() {
-    console.log('Calculando os imcs..');
-}*/ 
 
-botao.addEventListener('click', function(){
-    console.log('Calculando todos os imcs...');
-});
 botao.addEventListener('click', calculandoTodosIMCs);
 
 
