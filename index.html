@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>IMC Javascript</title>
+    <!--<link rel="stylesheet" href="style.css">-->
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Calculador de IMC</h1>
+        </div>
+    </header>
+    <main class="container">
+        <section>
+            <h2>Pacientes</h2>
+            <table>
+                <tr>
+                    <th>Nome</th>
+                    <th>Peso</th>
+                    <th>Altura</th>
+                    <th>IMC</th>
+                </tr>
+            </table>
+            <button id="calcula-imcs" class="botao">Calcular IMCs</button>
+        </section>
+        <section>
+            <h2>Adicionar paciente</h2>
+            <form>
+                <fieldset>
+                    <label for="nome">Nome:</label>
+                    <input id="campo-nome" type="text" placeholder="digite o nome">
+                </fieldset>
+                <fieldset>
+                    <label for="peso">Peso:</label>
+                    <input id="campo-peso" type="text" placeholder="digite o peso">
+                </fieldset>
+                <fieldset>
+                    <label for="altura">Altura:</label>
+                    <input id="campo-altura" type="text" placeholder="digite a altura">
+                </fieldset>
+                <button id="adicionar-paciente" class="botao bto-principal">Adicionar</button>
+            </form>
+        </section>
+    </main>
+
+    
+    <script src="js/percorre.js"></script>
+    <script src="js/montar-paciente.js"></script>
+    <script src="js/imprimeNome.js"></script>
+    <script src="js/adicionar.js"></script>
+    <script src="js/calcula-imc.js"></script>
+    
+</body>
+</html>
